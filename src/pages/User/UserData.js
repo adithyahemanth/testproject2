@@ -10,7 +10,7 @@ function UserData(props) {
     const [data, setdata] = useState([])
     const[loader,setloader]=useState(false)
     const deleteHandler=async(emailid)=>{
-        const response=await axios.delete("http://3.6.93.159:7883/machstatz/delete_existing_user",
+        const response=await axios.delete("//3.6.93.159:7883/machstatz/delete_existing_user",
         {params:{ 
             email:emailid
         }}
@@ -19,7 +19,7 @@ function UserData(props) {
     }
     
     useEffect(() => {
-        axios.get("http://3.6.93.159:7883/machstatz/get_all_users").then(data=>{
+        axios.get("//3.6.93.159:7883/machstatz/get_all_users").then(data=>{
             setdata(data.data)
 
         }) 
