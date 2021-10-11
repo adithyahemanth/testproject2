@@ -1,0 +1,15 @@
+.formdata input{
+    width: 90%;
+    margin: 20px;
+    padding:10px
+}
+.formdata{
+    padding:20px
+}
+.formdata label{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.formdata button{
+    margin: 10px;
+}
